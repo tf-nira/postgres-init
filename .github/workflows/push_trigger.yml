@@ -31,7 +31,7 @@ jobs:
         run: |
           cd "./${{env.SERVICE_LOCATION}}"
           chmod +x ./get_db_data.sh
-          bash ./get_db_data.sh
+          bash ./get_db_data.sh ${{ env.BRANCH_NAME }}
 
       - name: Build image
         run: |
