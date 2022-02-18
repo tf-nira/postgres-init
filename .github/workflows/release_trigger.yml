@@ -9,12 +9,12 @@ on:
       - develop
 
 jobs:
-  build-tusd-server:
+  build-postgres-init-docker:
     runs-on: ubuntu-latest
     env:
       NAMESPACE: ${{ secrets. dev_namespace_docker_hub }}
-      SERVICE_NAME: tusd-server
-      SERVICE_LOCATION: tusd-server
+      SERVICE_NAME: postgres-init
+      SERVICE_LOCATION: postgres-init
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -27,6 +27,11 @@ jobs:
           # Strip git ref prefix from version
           echo "BRANCH_NAME=$(echo ${{ github.ref }} | sed -e 's,.*/\(.*\),\1,')" >> $GITHUB_ENV
           echo "GPG_TTY=$(tty)" >> $GITHUB_ENV
+
+      - clone all repos
+        run: |
+          chmod +x ./${{env.SERVICE_LOCATION}}/get_db_data.sh
+          bash ./${{env.SERVICE_LOCATION}}/get_db_data.sh
 
       - name: Build image
         run: |
