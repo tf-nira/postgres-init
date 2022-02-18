@@ -2,11 +2,8 @@
 name: Maven Package upon a push
 
 on:
-  push:
-    branches:
-      - master
-      - 1.*
-      - develop
+  release:
+    types: [published]
 
 jobs:
   build-postgres-init-docker:
@@ -36,6 +33,7 @@ jobs:
 
       - name: Build image
         run: |
+          cd "./${{env.SERVICE_LOCATION}}"
           docker build . --file Dockerfile --tag ${{ env.SERVICE_NAME }}
 
       - name: Log into registry
