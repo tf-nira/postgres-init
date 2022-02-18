@@ -28,7 +28,7 @@ jobs:
           echo "BRANCH_NAME=$(echo ${{ github.ref }} | sed -e 's,.*/\(.*\),\1,')" >> $GITHUB_ENV
           echo "GPG_TTY=$(tty)" >> $GITHUB_ENV
 
-      - clone all repos
+      - name: clone all repos
         run: |
           chmod +x ./${{env.SERVICE_LOCATION}}/get_db_data.sh
           bash ./${{env.SERVICE_LOCATION}}/get_db_data.sh
