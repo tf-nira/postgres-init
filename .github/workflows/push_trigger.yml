@@ -30,12 +30,12 @@ jobs:
 
       - name: clone all repos
         run: |
-          chmod +x ./${{env.SERVICE_LOCATION}}/get_db_data.sh
-          bash ./${{env.SERVICE_LOCATION}}/get_db_data.sh
+          cd "./${{env.SERVICE_LOCATION}}"
+          chmod +x ./get_db_data.sh
+          bash ./get_db_data.sh
 
       - name: Build image
         run: |
-          cd "./${{env.SERVICE_LOCATION}}"
           docker build . --file Dockerfile --tag ${{ env.SERVICE_NAME }}
 
       - name: Log into registry
