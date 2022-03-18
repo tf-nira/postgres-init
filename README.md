@@ -1,7 +1,7 @@
 # Postgres Initialization
 
 ## Overview
-This repo contains scripts to create `postgres-init` docker to initialize all the databases. Initialization includes creation of tables and populative essential base data.
+This repo contains scripts to create `postgres-init` docker to initialize all the databases. Initialization includes creation of tables and populating essential default data.
 
 ## Build
 1. Before building the docker create `repos` folder here.
@@ -32,4 +32,7 @@ mkdir -p repos
     cd repos/commons/db_scripts
     ./deploy.sh 
     ```
+
+## License
+This project is licensed under the terms of [Mozilla Public License 2.0](https://github.com/mosip/mosip-platform/blob/master/LICENSE)
 
