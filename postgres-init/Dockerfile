@@ -39,7 +39,7 @@ WORKDIR /home/mosip/repos/db_scripts/
 
 CMD if [ "$ENV_VERSION_FLAG" = "false" ]; then \
   cd $MOSIP_DB_NAME;bash deploy.sh ; \
-  elif [ "$ENV_VERSION_FLAG" = "true" && "$MOSIP_DB_NAME" = "mosip_pms" ]; then  \
+  elif [ "$ENV_VERSION_FLAG" = "true" ] && [ "$MOSIP_DB_NAME" = "mosip_pms" ]; then  \
   cd $MOSIP_DB_NAME ; \
   echo "EXECUTING SED COMMAND"; \
   sed -i "s/datashare.datashare/datashare-service/g" dml/pms-auth_policy.csv ; \
