@@ -41,8 +41,9 @@ CMD if [ "$ENV_VERSION_FLAG" = "false" ]; then \
   cd $MOSIP_DB_NAME;bash deploy.sh ; \
   elif [ "$ENV_VERSION_FLAG" = "true" && "$MOSIP_DB_NAME" = "mosip_pms" ]; then  \
   cd $MOSIP_DB_NAME ; \
-  sed -i 's/datashare.datashare/datashare-service/g' dml/pms-auth_policy.csv ; \
-  sed -i 's/datashare.datashare/datashare-service/g' dml/pms-auth_policy_h.csv ; \
+  echo "EXECUTING SED COMMAND"; \
+  sed -i "s/datashare.datashare/datashare-service/g" dml/pms-auth_policy.csv ; \
+  sed -i "s/datashare.datashare/datashare-service/g" dml/pms-auth_policy_h.csv ; \
   bash deploy.sh ; \
   else \
   cd $MOSIP_DB_NAME;bash deploy.sh ; \
