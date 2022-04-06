@@ -1,7 +1,7 @@
 # Masterdata Upload Utility
 
-## Introduction
-Masterdata is specified in xlsx files available in `xlsx` folder.  Update the xlsx as per [Masterdata Guide](https://docs.mosip.io/1.2.0/deployment/masterdata-guide) and run the upload utility. Note that you must run this utility only once to seed the DB data first time.  Subsequently, for any updates use Admin UI or Masterdata APIs.
+## Overview
+Refer [Masterdata Guide](https://docs.mosip.io/1.2.0/deployment/masterdata-guide).
 
 ## Prequisites
 1. `python3.9` virtual env
@@ -29,3 +29,6 @@ TODO: Check if below are needed
     The shell script runs `lib/upload_masterdata.py` script.
 
 1. To populate data only in specific tables comment out unwanted tables in `lib/table_order` with a `#` at the start of each line. 
+
+# Docker
+See `entrypoint.sh` to see the steps performed to upload default masterdata. Also see [Dockerfile](./Dockerfile) and [sample docker run script](docker-run.sh).

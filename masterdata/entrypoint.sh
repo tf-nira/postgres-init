@@ -1,5 +1,5 @@
 #!/bin/sh
-# entrypoints.sh
+# entrypoints.sh 
 
 git clone https://github.com/mosip/mosip-data -b $BRANCH
 

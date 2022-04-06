@@ -31,7 +31,6 @@ USER ${container_user_uid}:${container_user_gid}
 
 WORKDIR  /home/${container_user}
 COPY --chown=${container_user}:${container_user} lib ./lib
-#RUN chown -R ${container_user}:${container_user} /home/${container_user}/lib
 COPY entrypoint.sh .
 
 ENV BRANCH=develop
