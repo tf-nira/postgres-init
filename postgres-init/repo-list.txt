@@ -1,0 +1,9 @@
+commons
+pre-registration
+registration
+id-repository
+id-authentication
+partner-management-services
+admin-services
+keymanager
+audit-manager
