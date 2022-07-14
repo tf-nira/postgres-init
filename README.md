@@ -20,7 +20,7 @@ This repo contains scripts to create `postgres-init` docker to initialize all th
 1. Set the following environment variables (given with an example below): 
     * `MOSIP_DB_NAME`: This is the DB folder name from which scripts have to be executed. Eg. `mosip_master`.
     * `DB_SERVERIP`: Host name/IP of postgres server.
-    * `DB_PORT: Default 5432.
+    * `DB_PORT`: Default 5432.
     * `SU_USER`: Super user. Default `postgres`
     * `SU_USER_PWD`: Super user password.
     * `DEFAULT_DB_NAME`: Specify `postgres`.
