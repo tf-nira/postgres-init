@@ -18,6 +18,7 @@ COPY ./repos/keymanager/db_scripts .
 COPY ./repos/audit-manager/db_scripts .
 COPY ./repos/resident-services/db_scripts .
 COPY ./repos/mosip-compliance-toolkit/db_scripts .
+COPY ./repos/digital-card-service/db_scripts .
 
 
 ENV MOSIP_DB_NAME=
