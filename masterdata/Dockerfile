@@ -1,6 +1,6 @@
 FROM python:3
 
-ARG branch=develop
+ARG branch=1.2.0.1
 #ARG SOURCE
 #ARG COMMIT_HASH
 #ARG COMMIT_ID
