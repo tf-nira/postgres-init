@@ -33,7 +33,7 @@ WORKDIR  /home/${container_user}
 COPY --chown=${container_user}:${container_user} lib ./lib
 COPY entrypoint.sh .
 
-ENV BRANCH=develop
+ENV BRANCH=
 ENV DB_HOST= 
 ENV DB_PORT=5432
 ENV DB_USER=postgres
