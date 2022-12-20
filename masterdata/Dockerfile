@@ -1,4 +1,4 @@
-FROM python:3
+FROM python:3.10
 
 ARG branch=1.2.0.1
 #ARG SOURCE
