@@ -15,18 +15,6 @@ elif [ $REPO_NAME == "digital-card-service" ]
 then
 branch=develop
 git clone -b $branch https://github.com/mosip/$REPO_NAME.git ./repos/$REPO_NAME
-elif [ $REPO_NAME == "idp" ]
-then
-branch=0.9.0
-git clone -b $branch https://github.com/mosip/$REPO_NAME.git ./repos/$REPO_NAME
-elif [ $REPO_NAME == "id-authentication" ]
-then
-branch=1.2.0.1-B2
-git clone -b $branch https://github.com/mosip/$REPO_NAME.git ./repos/$REPO_NAME
-elif [ $REPO_NAME == "partner-management-services" ]
-then
-branch=1.2.0.1-B2
-git clone -b $branch https://github.com/mosip/$REPO_NAME.git ./repos/$REPO_NAME
 else
 git clone -b $1 https://github.com/mosip/$REPO_NAME.git ./repos/$REPO_NAME
 fi
