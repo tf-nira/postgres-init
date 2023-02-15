@@ -9,7 +9,7 @@ on:
         default: 'Triggered for Updates'
         type: string
   repository_dispatch:
-    types: [ trigger-event ]
+    types: [ db-event ]
 
 jobs:
   build-postgres-init-docker:
