@@ -11,3 +11,4 @@ resident-services
 mosip-compliance-toolkit
 digital-card-service
 esignet
+esignet-mock-services

@@ -20,6 +20,7 @@ COPY ./repos/resident-services/db_scripts .
 COPY ./repos/mosip-compliance-toolkit/db_scripts .
 COPY ./repos/digital-card-service/db_scripts .
 COPY ./repos/esignet/db_scripts .
+COPY ./repos/esignet-mock-services/db_scripts .
 
 
 ENV MOSIP_DB_NAME=
