@@ -29,12 +29,6 @@ jobs:
           echo "BRANCH_NAME=$(echo ${{ github.ref }} | sed -e 's,.*/\(.*\),\1,')" >> $GITHUB_ENV
           echo "GPG_TTY=$(tty)" >> $GITHUB_ENV
 
-      - name: clone all repos
-        run: |
-          cd "./${{env.SERVICE_LOCATION}}"
-          chmod +x ./get_db_data.sh
-          bash ./get_db_data.sh ${{ env.BRANCH_NAME }}
-
       - name: Build image
         run: |
           cd "./${{env.SERVICE_LOCATION}}"
