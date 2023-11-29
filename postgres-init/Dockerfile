@@ -35,4 +35,6 @@ ENV DML_FLAG=
 
 ADD postgres-init.sh postgres-init.sh
 
-ENTRYPOINT ["./postgres-init.sh" ]
+RUN chmod +x postgres-init.sh
+
+ENTRYPOINT ["/bin/bash", "-c", "./postgres-init.sh" ]
