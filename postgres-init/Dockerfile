@@ -28,7 +28,7 @@ RUN apt-get -y update \
 && groupadd -g ${container_user_gid} ${container_user_group} \
 && useradd -u ${container_user_uid} -g ${container_user_group} -s /bin/sh -m ${container_user}
 
-WORKDIR /home/${container_user}
+WORKDIR /home/${container_user}/repos/
 
 ENV GIT_REPO_URL=
 
@@ -53,7 +53,7 @@ ENV DML_FLAG=
 ADD postgres-init.sh postgres-init.sh
 
 # change permissions of file inside working dir
-RUN chown -R ${container_user}:${container_user} /home/${container_user}
+RUN chown -R ${container_user}:${container_user} /home/${container_user}/repos/
 
 # select container user for all tasks
 USER ${container_user_uid}:${container_user_gid}
