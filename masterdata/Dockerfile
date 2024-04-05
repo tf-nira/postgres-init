@@ -15,7 +15,6 @@ ARG container_user_group=mosip
 ARG container_user_uid=1001
 ARG container_user_gid=1001
 
-#ARG XLS_FOLDER_PATH=mosip-data/mosip_master/xlsx
 
 # Install packages and create user
 RUN apt-get -y update \
