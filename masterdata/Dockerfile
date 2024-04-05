@@ -15,6 +15,8 @@ ARG container_user_group=mosip
 ARG container_user_uid=1001
 ARG container_user_gid=1001
 
+#ARG XLS_FOLDER_PATH=mosip-data/mosip_master/xlsx
+
 # Install packages and create user
 RUN apt-get -y update \
 && groupadd -g ${container_user_gid} ${container_user_group} \
@@ -37,7 +39,8 @@ ENV BRANCH=
 ENV DB_HOST= 
 ENV DB_PORT=5432
 ENV DB_USER=postgres
-ENV DB_PWD= 
+ENV DB_PWD=
+ENV REPOSITORY=
 ENV XLS_FOLDER=/home/${container_user}/mosip-data/mosip_master/xlsx
 
 ENTRYPOINT ["./entrypoint.sh"]
