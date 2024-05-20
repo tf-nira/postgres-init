@@ -2,7 +2,7 @@
 app_detail
 authentication_method
 biometric_type
-blacklisted_words
+blocklisted_words
 device_type
 doc_category
 doc_type
