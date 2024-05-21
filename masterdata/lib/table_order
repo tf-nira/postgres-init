@@ -12,6 +12,7 @@ module_detail
 process_list
 reason_category
 reg_center_type
+role_list
 template_file_format
 template_type
 title
