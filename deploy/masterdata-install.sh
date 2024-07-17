@@ -29,8 +29,8 @@ if [ $yn = "Y" ]
    helm repo update
 
    echo Copy configmaps
-   sed -i 's/\r$//' copy_secrets.sh
-   ./copy_secrets.sh
+   sed -i 's/\r$//' copy-secrets-masterdata.sh
+   ./copy-secrets-masterdata.sh
 
    echo Loading masterdata
    helm -n $NS install masterdata-loader mosip/masterdata-loader \
