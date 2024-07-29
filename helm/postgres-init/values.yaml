@@ -90,7 +90,7 @@ dbUserPasswords:
 
 databases:
   mosip_master:
-    enabled: true
+    enabled: false
     host: "postgres-postgresql"
     port: 5432
     su:
@@ -103,7 +103,7 @@ databases:
     branch: release-1.2.0.1
 
   mosip_audit:
-    enabled: true
+    enabled: false
     host: "postgres-postgresql"
     port: 5432
     su:
@@ -116,7 +116,7 @@ databases:
     branch: release-1.2.0.1
 
   mosip_keymgr:
-    enabled: true
+    enabled: false
     host: "postgres-postgresql"
     port: 5432
     su:
@@ -129,7 +129,7 @@ databases:
     branch: release-1.2.0.1
 
   mosip_kernel:
-    enabled: true
+    enabled: false
     host: "postgres-postgresql"
     port: 5432
     su:
@@ -142,7 +142,7 @@ databases:
     branch: release-1.2.0.1
 
   mosip_idmap:
-    enabled: true
+    enabled: false
     host: "postgres-postgresql"
     port: 5432
     su:
@@ -155,7 +155,7 @@ databases:
     branch: release-1.2.0.1
 
   mosip_prereg:
-    enabled: true
+    enabled: false
     host: "postgres-postgresql"
     port: 5432
     su:
@@ -168,7 +168,7 @@ databases:
     branch: release-1.2.0.1
 
   mosip_idrepo:
-    enabled: true
+    enabled: false
     host: "postgres-postgresql"
     port: 5432
     su:
@@ -181,7 +181,7 @@ databases:
     branch: release-1.2.0.1
 
   mosip_ida:
-    enabled: true
+    enabled: false
     host: "postgres-postgresql"
     port: 5432
     su:
@@ -194,7 +194,7 @@ databases:
     branch: release-1.2.0.1
 
   mosip_credential:
-    enabled: true
+    enabled: false
     host: "postgres-postgresql"
     port: 5432
     su:
@@ -207,7 +207,7 @@ databases:
     branch: release-1.2.0.1
 
   mosip_regprc:
-    enabled: true
+    enabled: false
     host: "postgres-postgresql"
     port: 5432
     su:
@@ -220,7 +220,7 @@ databases:
     branch: release-1.2.0.1
 
   mosip_pms:
-    enabled: true
+    enabled: false
     host: "postgres-postgresql"
     port: 5432
     # Note: This flag is used update datashare domain in partner policies according to deployment version( i.e v2/v3 )
@@ -236,7 +236,7 @@ databases:
     branch: release-1.2.0.1
 
   mosip_hotlist:
-    enabled: true
+    enabled: false
     host: "postgres-postgresql"
     port: 5432
     su:
@@ -249,7 +249,7 @@ databases:
     branch: release-1.2.0.1
 
   mosip_resident:
-    enabled: true
+    enabled: false
     host: "postgres-postgresql"
     port: 5432
     su:
