@@ -19,6 +19,7 @@ on:
       - develop
       - release*
       - MOSIP*
+      - tf-nira-qa
 
 jobs:
   build-dockers:
