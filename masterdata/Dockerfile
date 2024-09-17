@@ -1,6 +1,6 @@
 FROM python:3.10
 
-ARG branch=1.2.0.1
+ARG branch=tf_nira_dev
 ARG SOURCE
 ARG COMMIT_HASH
 ARG COMMIT_ID
@@ -10,7 +10,7 @@ LABEL commit_hash=${COMMIT_HASH}
 LABEL commit_id=${COMMIT_ID}
 LABEL build_time=${BUILD_TIME}
 
-ARG container_user=tf-nira
+ARG container_user=mosip
 ARG container_user_group=mosip
 ARG container_user_uid=1001
 ARG container_user_gid=1001
