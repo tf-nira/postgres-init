@@ -1,7 +1,7 @@
 #!/bin/sh
 # entrypoints.sh 
 
-git clone https://github.com/tf-nira/mosip-data -b $BRANCH
+git clone https://github.com/tf-nira/mosip-data -b tf_nira_dev
 
 echo Uploading ..
 cd lib
