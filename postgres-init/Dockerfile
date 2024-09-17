@@ -11,7 +11,7 @@ LABEL build_time=${BUILD_TIME}
 RUN apt-get update
 RUN apt-get install -y python3 python3-pip python3-xlrd git
 
-WORKDIR /home/mosip/repos/
+WORKDIR /home/tf-nira/repos/db_scripts
 
 ENV GIT_REPO_URL=
 
